@@ -1,0 +1,23 @@
+digraph HastaneRandevuSistemi_Alternatif2 {
+    rankdir=TB;
+    node [shape=box, fontname="Arial"];
+    
+    // Ana Akış Adımları
+    Basla [shape=oval, label="BAŞLA"];
+    KimlikDogrulama [label="Kimlik Doğrulama"];
+    PoliklinikSecimi [label="Poliklinik Seçimi"];
+    DoktorSecimi [label="Doktor Seçimi"];
+    SaatleriGoster [label="Uygun Saatleri Görüntüle"];
+    RandevuOnay [label="Randevuyu Onayla"];
+    SmsBildirim [label="SMS Gönder"];
+    Bitir [shape=oval, label="BİTİR"];
+    
+    // Bağlantılar
+    Basla -> KimlikDogrulama;
+    KimlikDogrulama -> PoliklinikSecimi;
+    PoliklinikSecimi -> DoktorSecimi;
+    DoktorSecimi -> SaatleriGoster;
+    SaatleriGoster -> RandevuOnay;
+    RandevuOnay -> SmsBildirim;
+    SmsBildirim -> Bitir;
+}
