@@ -1,0 +1,77 @@
+digraph ECommerce_Odeme_Sistemi {
+    rankdir=TB;
+    node [shape=box, fontname="Arial"];
+    
+    // Başlangıç ve Bitiş
+    Basla [shape=oval, label="BAŞLA"];
+    Bitir [shape=oval, label="BİTİR"];
+    
+    // 1. Oturum Yönetimi
+    OturumKontrol [shape=diamond, label="Kullanıcı Giriş Yaptı mı?"];
+    SepetiYukle [shape=box, label="Sepeti Veritabanından Al"];
+    SepetiYukleCerez [shape=box, label="Sepeti Çerezden Al"];
+    
+    // 2. Ürün Ekleme Döngüsü
+    AlisverisDongu [shape=box, label="DÖNGÜ: Kullanıcı Alışveriş Yapıyor mu?"];
+    UrunSec [shape=parallelogram, label="OKU ÜRÜN, ADET"];
+    StokKontrol [shape=diamond, label="Stok Yeterli mi?"];
+    UrunEkle [shape=box, label="Sepete Ürün Ekle"];
+    StokHata [shape=parallelogram, label="YAZ 'Yetersiz stok.'"];
+    DevamSoru [shape=parallelogram, label="OKU DEVAM_CEVAP"];
+    DevamKontrol [shape=diamond, label="DEVAM_CEVAP = 'HAYIR'?"];
+    
+    // 3. Ödeme Aşaması
+    OdemeAsamasi [shape=box, label="BAŞLA ÖDEME AŞAMASI"];
+    IndirimSoru [shape=parallelogram, label="OKU İNDİRİM_KODU"];
+    IndirimKontrol [shape=diamond, label="Kod Geçerli mi?"];
+    IndirimUygula [shape=box, label="İndirimi Uygula"];
+    IndirimHata [shape=parallelogram, label="YAZ 'Geçersiz kod.'"];
+    AdresGir [shape=parallelogram, label="OKU KARGO_ADRESİ"];
+    KargoHesapla [shape=box, label="Kargo Ücreti Hesapla"];
+    OdemeYontemiSec [shape=parallelogram, label="OKU ÖDEME_YÖNTEMİ"];
+    
+    // 4. Ödeme İşlemi
+    OdemeBilgisiGir [shape=parallelogram, label="OKU ÖDEME BİLGİLERİ"];
+    OdemeIslemi [shape=diamond, label="Ödeme Başarılı mı?"];
+    SiparisKaydet [shape=box, label="Siparişi Kaydet\nStokları Güncelle"];
+    OdemeHata [shape=parallelogram, label="YAZ 'Ödeme başarısız.'"];
+    
+    // 5. Bitiş
+    OdemeBitir [shape=box, label="BİTİR ÖDEME AŞAMASI"];
+    
+    // Akış Bağlantıları
+    Basla -> OturumKontrol;
+    OturumKontrol -> SepetiYukle [label="EVET"];
+    OturumKontrol -> SepetiYukleCerez [label="HAYIR"];
+    SepetiYukle -> AlisverisDongu;
+    SepetiYukleCerez -> AlisverisDongu;
+    
+    AlisverisDongu -> UrunSec;
+    UrunSec -> StokKontrol;
+    StokKontrol -> UrunEkle [label="EVET"];
+    StokKontrol -> StokHata [label="HAYIR"];
+    StokHata -> UrunSec;
+    UrunEkle -> DevamSoru;
+    DevamSoru -> DevamKontrol;
+    DevamKontrol -> UrunSec [label="HAYIR"];
+    DevamKontrol -> OdemeAsamasi [label="EVET"];
+    
+    OdemeAsamasi -> IndirimSoru;
+    IndirimSoru -> IndirimKontrol;
+    IndirimKontrol -> IndirimUygula [label="EVET"];
+    IndirimKontrol -> AdresGir [label="HAYIR"];
+    IndirimUygula -> AdresGir;
+    
+    AdresGir -> KargoHesapla;
+    KargoHesapla -> OdemeYontemiSec;
+    OdemeYontemiSec -> OdemeBilgisiGir;
+    OdemeBilgisiGir -> OdemeIslemi;
+    
+    OdemeIslemi -> SiparisKaydet [label="EVET"];
+    OdemeIslemi -> OdemeHata [label="HAYIR"];
+    
+    SiparisKaydet -> OdemeBitir;
+    OdemeHata -> OdemeBitir;
+    
+    OdemeBitir -> Bitir;
+}
