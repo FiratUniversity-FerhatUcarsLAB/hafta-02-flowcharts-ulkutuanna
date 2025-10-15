@@ -1,0 +1,19 @@
+Kullanıcı: “Akıllı ev güvenlik sistemi 7/24 çalışır. Ana döngü içinde sensör okuma, tehdit algılama, alarm verme ve bildirim gönderme süreçlerini içeren pseudocode yaz.”
+
+Asistan: Elbette, bir akıllı ev güvenlik sisteminin 7/24 kesintisiz çalışmasını sağlayan bir pseudocode (sözde kod) hazırladım.
+
+Kullanıcı: tehdit konusunu değiştirip başka bir pseudocode yaz
+
+Asistan: Elbette, tehdit konusunu değiştirerek akıllı bir ev otomasyon sistemi için başka bir pseudocode hazırladım. Bu versiyonda, odadaki ışık ve ses seviyelerine göre uyarlanmış bir otomasyon senaryosunu ele alacağız.
+
+Kullanıcı: bunu dot koduyla yaz
+
+Asistan: Elbette, akıllı ev otomasyon sistemi için hazırladığım pseudocode'u bir akış şeması olarak görselleştiren Graphviz DOT kodunu aşağıda bulabilirsin.
+
+Kullanıcı: ilk hazırladığın pseudocode un dot kodunu hazırla
+
+Asistan: Elbette, ilk hazırladığım akıllı ev güvenlik sistemi pseudocode'unun Graphviz DOT kodunu aşağıda bulabilirsin.
+
+Kullanıcı: döngü komutunu değiştir
+
+Asistan: Elbette, döngü komutunu değiştirerek akıllı ev güvenlik sistemi için hazırladığım pseudocode'u ve Graphviz DOT kodunu yeniden düzenledim. Bu versiyonlarda, "DÖNGÜ (DOĞRU)" yerine daha yaygın bir programlama kalıbı olan "SONSUZ DÖNGÜ" ifadesini kullandım.
