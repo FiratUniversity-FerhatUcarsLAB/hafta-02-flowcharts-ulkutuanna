@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="545pt" height="1110pt" viewBox="0.00 0.00 545.00 1110.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1106.4)">
+<title>HastaneRandevuSistemi_Alternatif1</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1106.4 540.9,-1106.4 540.9,4 -4,4"/>
+<!-- Basla -->
+<g id="node1" class="node">
+<title>Basla</title>
+<ellipse fill="none" stroke="black" cx="267.38" cy="-1084.4" rx="41.1" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="267.38" y="-1080.2" font-family="Arial" font-size="14.00">BAŞLA</text>
+</g>
+<!-- GirisDongusu -->
+<g id="node3" class="node">
+<title>GirisDongusu</title>
+<polygon fill="none" stroke="black" points="357.65,-1029.4 177.11,-1029.4 177.11,-993.4 357.65,-993.4 357.65,-1029.4"/>
+<text xml:space="preserve" text-anchor="middle" x="267.38" y="-1007.2" font-family="Arial" font-size="14.00">DÖNGÜ: Giriş Deneme &lt; 3</text>
+</g>
+<!-- Basla&#45;&gt;GirisDongusu -->
+<g id="edge1" class="edge">
+<title>Basla-&gt;GirisDongusu</title>
+<path fill="none" stroke="black" d="M267.38,-1066.21C267.38,-1058.63 267.38,-1049.5 267.38,-1040.94"/>
+<polygon fill="black" stroke="black" points="270.88,-1040.94 267.38,-1030.94 263.88,-1040.94 270.88,-1040.94"/>
+</g>
+<!-- Bitir -->
+<g id="node2" class="node">
+<title>Bitir</title>
+<ellipse fill="none" stroke="black" cx="170.38" cy="-18" rx="41.08" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="170.38" y="-13.8" font-family="Arial" font-size="14.00">BİTİR</text>
+</g>
+<!-- KimlikDogrulama -->
+<g id="node4" class="node">
+<title>KimlikDogrulama</title>
+<polygon fill="none" stroke="black" points="413.37,-940.6 181.13,-940.6 121.39,-904.6 353.63,-904.6 413.37,-940.6"/>
+<text xml:space="preserve" text-anchor="middle" x="267.38" y="-918.4" font-family="Arial" font-size="14.00">OKU Kimlik No, Şifre</text>
+</g>
+<!-- GirisDongusu&#45;&gt;KimlikDogrulama -->
+<g id="edge2" class="edge">
+<title>GirisDongusu-&gt;KimlikDogrulama</title>
+<path fill="none" stroke="black" d="M267.38,-993.25C267.38,-981.56 267.38,-965.79 267.38,-952.22"/>
+<polygon fill="black" stroke="black" points="270.88,-952.52 267.38,-942.52 263.88,-952.52 270.88,-952.52"/>
+</g>
+<!-- HesapBloke -->
+<g id="node8" class="node">
+<title>HesapBloke</title>
+<polygon fill="none" stroke="black" points="170.76,-886.6 0,-886.6 0,-850.6 170.76,-850.6 170.76,-886.6"/>
+<text xml:space="preserve" text-anchor="middle" x="85.38" y="-864.4" font-family="Arial" font-size="14.00">YAZ 'Hesap bloke edildi.'</text>
+</g>
+<!-- GirisDongusu&#45;&gt;HesapBloke -->
+<g id="edge7" class="edge">
+<title>GirisDongusu-&gt;HesapBloke</title>
+<path fill="none" stroke="black" d="M192.82,-992.94C163.6,-982.45 132.35,-966 112.38,-940.6 102.57,-928.13 96.02,-911.7 91.83,-897.78"/>
+<polygon fill="black" stroke="black" points="95.25,-897.02 89.24,-888.29 88.49,-898.86 95.25,-897.02"/>
+<text xml:space="preserve" text-anchor="middle" x="202.18" y="-962.8" font-family="Times,serif" font-size="14.00">3 deneme sonrası</text>
+</g>
+<!-- GirisKontrol -->
+<g id="node5" class="node">
+<title>GirisKontrol</title>
+<polygon fill="none" stroke="black" points="267.38,-832.6 144.01,-814.6 267.38,-796.6 390.75,-814.6 267.38,-832.6"/>
+<text xml:space="preserve" text-anchor="middle" x="267.38" y="-810.4" font-family="Arial" font-size="14.00">Kimlik Doğru mu?</text>
+</g>
+<!-- KimlikDogrulama&#45;&gt;GirisKontrol -->
+<g id="edge3" class="edge">
+<title>KimlikDogrulama-&gt;GirisKontrol</title>
+<path fill="none" stroke="black" d="M267.38,-904.57C267.38,-888.36 267.38,-863.66 267.38,-844.39"/>
+<polygon fill="black" stroke="black" points="270.88,-844.45 267.38,-834.45 263.88,-844.45 270.88,-844.45"/>
+</g>
+<!-- GirisBasarili -->
+<g id="node6" class="node">
+<title>GirisBasarili</title>
+<polygon fill="none" stroke="black" points="332.29,-743.8 186.47,-743.8 186.47,-707.8 332.29,-707.8 332.29,-743.8"/>
+<text xml:space="preserve" text-anchor="middle" x="259.38" y="-721.6" font-family="Arial" font-size="14.00">YAZ 'Giriş Başarılı.'</text>
+</g>
+<!-- GirisKontrol&#45;&gt;GirisBasarili -->
+<g id="edge4" class="edge">
+<title>GirisKontrol-&gt;GirisBasarili</title>
+<path fill="none" stroke="black" d="M265.8,-796.45C264.72,-784.76 263.27,-768.99 262.02,-755.42"/>
+<polygon fill="black" stroke="black" points="265.53,-755.35 261.12,-745.72 258.56,-756 265.53,-755.35"/>
+<text xml:space="preserve" text-anchor="middle" x="281.98" y="-766" font-family="Times,serif" font-size="14.00">EVET</text>
+</g>
+<!-- GirisBasarisiz -->
+<g id="node7" class="node">
+<title>GirisBasarisiz</title>
+<polygon fill="none" stroke="black" points="536.9,-743.8 349.85,-743.8 349.85,-707.8 536.9,-707.8 536.9,-743.8"/>
+<text xml:space="preserve" text-anchor="middle" x="443.38" y="-721.6" font-family="Arial" font-size="14.00">YAZ 'Hatalı Kimlik Bilgileri.'</text>
+</g>
+<!-- GirisKontrol&#45;&gt;GirisBasarisiz -->
+<g id="edge5" class="edge">
+<title>GirisKontrol-&gt;GirisBasarisiz</title>
+<path fill="none" stroke="black" d="M294.49,-800.23C321.99,-786.67 365.04,-765.44 397.79,-749.29"/>
+<polygon fill="black" stroke="black" points="399.25,-752.47 406.67,-744.91 396.15,-746.19 399.25,-752.47"/>
+<text xml:space="preserve" text-anchor="middle" x="393.31" y="-766" font-family="Times,serif" font-size="14.00">HAYIR</text>
+</g>
+<!-- PoliklinikSecim -->
+<g id="node9" class="node">
+<title>PoliklinikSecim</title>
+<polygon fill="none" stroke="black" points="423.42,-670.8 173.61,-670.8 109.34,-634.8 359.15,-634.8 423.42,-670.8"/>
+<text xml:space="preserve" text-anchor="middle" x="266.38" y="-648.6" font-family="Arial" font-size="14.00">OKU Seçilen Poliklinik</text>
+</g>
+<!-- GirisBasarili&#45;&gt;PoliklinikSecim -->
+<g id="edge9" class="edge">
+<title>GirisBasarili-&gt;PoliklinikSecim</title>
+<path fill="none" stroke="black" d="M261.07,-707.61C261.83,-699.94 262.74,-690.69 263.59,-682.04"/>
+<polygon fill="black" stroke="black" points="267.05,-682.63 264.55,-672.34 260.09,-681.94 267.05,-682.63"/>
+</g>
+<!-- GirisBasarisiz&#45;&gt;GirisDongusu -->
+<g id="edge6" class="edge">
+<title>GirisBasarisiz-&gt;GirisDongusu</title>
+<path fill="none" stroke="black" d="M447,-744.02C454.17,-783.12 466,-879.86 422.38,-940.6 406.27,-963.04 381.21,-978.4 355.91,-988.86"/>
+<polygon fill="black" stroke="black" points="354.94,-985.48 346.88,-992.36 357.46,-992.01 354.94,-985.48"/>
+</g>
+<!-- HesapBloke&#45;&gt;Bitir -->
+<g id="edge8" class="edge">
+<title>HesapBloke-&gt;Bitir</title>
+<path fill="none" stroke="black" d="M82.49,-850.24C79.53,-830.98 75.38,-798.96 75.38,-771.2 75.38,-771.2 75.38,-771.2 75.38,-90 75.38,-62.34 101.53,-44.16 126.39,-33.13"/>
+<polygon fill="black" stroke="black" points="127.56,-36.43 135.49,-29.4 124.9,-29.96 127.56,-36.43"/>
+</g>
+<!-- DoktorSecim -->
+<g id="node10" class="node">
+<title>DoktorSecim</title>
+<polygon fill="none" stroke="black" points="413.04,-597.8 184.51,-597.8 125.72,-561.8 354.25,-561.8 413.04,-597.8"/>
+<text xml:space="preserve" text-anchor="middle" x="269.38" y="-575.6" font-family="Arial" font-size="14.00">OKU Seçilen Doktor</text>
+</g>
+<!-- PoliklinikSecim&#45;&gt;DoktorSecim -->
+<g id="edge10" class="edge">
+<title>PoliklinikSecim-&gt;DoktorSecim</title>
+<path fill="none" stroke="black" d="M267.11,-634.61C267.43,-626.94 267.82,-617.69 268.19,-609.04"/>
+<polygon fill="black" stroke="black" points="271.67,-609.48 268.6,-599.34 264.68,-609.18 271.67,-609.48"/>
+</g>
+<!-- TarihSecim -->
+<g id="node11" class="node">
+<title>TarihSecim</title>
+<polygon fill="none" stroke="black" points="404.6,-524.8 191.09,-524.8 136.16,-488.8 349.67,-488.8 404.6,-524.8"/>
+<text xml:space="preserve" text-anchor="middle" x="270.38" y="-502.6" font-family="Arial" font-size="14.00">OKU Seçilen Tarih</text>
+</g>
+<!-- DoktorSecim&#45;&gt;TarihSecim -->
+<g id="edge11" class="edge">
+<title>DoktorSecim-&gt;TarihSecim</title>
+<path fill="none" stroke="black" d="M269.62,-561.61C269.73,-554.03 269.86,-544.9 269.98,-536.34"/>
+<polygon fill="black" stroke="black" points="273.48,-536.39 270.12,-526.34 266.48,-536.29 273.48,-536.39"/>
+</g>
+<!-- SaatSecim -->
+<g id="node12" class="node">
+<title>SaatSecim</title>
+<polygon fill="none" stroke="black" points="401.46,-451.8 192.94,-451.8 139.29,-415.8 347.82,-415.8 401.46,-451.8"/>
+<text xml:space="preserve" text-anchor="middle" x="270.38" y="-429.6" font-family="Arial" font-size="14.00">OKU Seçilen Saat</text>
+</g>
+<!-- TarihSecim&#45;&gt;SaatSecim -->
+<g id="edge12" class="edge">
+<title>TarihSecim-&gt;SaatSecim</title>
+<path fill="none" stroke="black" d="M270.38,-488.61C270.38,-481.03 270.38,-471.9 270.38,-463.34"/>
+<polygon fill="black" stroke="black" points="273.88,-463.34 270.38,-453.34 266.88,-463.34 273.88,-463.34"/>
+</g>
+<!-- BilgiGosterme -->
+<g id="node13" class="node">
+<title>BilgiGosterme</title>
+<polygon fill="none" stroke="black" points="426.28,-378.8 181.46,-378.8 118.48,-342.8 363.3,-342.8 426.28,-378.8"/>
+<text xml:space="preserve" text-anchor="middle" x="272.38" y="-356.6" font-family="Arial" font-size="14.00">YAZ Randevu Bilgileri</text>
+</g>
+<!-- SaatSecim&#45;&gt;BilgiGosterme -->
+<g id="edge13" class="edge">
+<title>SaatSecim-&gt;BilgiGosterme</title>
+<path fill="none" stroke="black" d="M270.86,-415.61C271.08,-407.94 271.34,-398.69 271.58,-390.04"/>
+<polygon fill="black" stroke="black" points="275.07,-390.44 271.86,-380.34 268.08,-390.24 275.07,-390.44"/>
+</g>
+<!-- RandevuOnayi -->
+<g id="node14" class="node">
+<title>RandevuOnayi</title>
+<polygon fill="none" stroke="black" points="273.38,-305.8 102.9,-287.8 273.38,-269.8 443.86,-287.8 273.38,-305.8"/>
+<text xml:space="preserve" text-anchor="middle" x="273.38" y="-283.6" font-family="Arial" font-size="14.00">Randevu Onaylandı mı?</text>
+</g>
+<!-- BilgiGosterme&#45;&gt;RandevuOnayi -->
+<g id="edge14" class="edge">
+<title>BilgiGosterme-&gt;RandevuOnayi</title>
+<path fill="none" stroke="black" d="M272.62,-342.61C272.73,-335.03 272.86,-325.9 272.98,-317.34"/>
+<polygon fill="black" stroke="black" points="276.48,-317.39 273.12,-307.34 269.48,-317.29 276.48,-317.39"/>
+</g>
+<!-- RandevuOlustur -->
+<g id="node15" class="node">
+<title>RandevuOlustur</title>
+<polygon fill="none" stroke="black" points="351.22,-217 197.54,-217 197.54,-181 351.22,-181 351.22,-217"/>
+<text xml:space="preserve" text-anchor="middle" x="274.38" y="-194.8" font-family="Arial" font-size="14.00">RANDEVU OLUŞTUR</text>
+</g>
+<!-- RandevuOnayi&#45;&gt;RandevuOlustur -->
+<g id="edge15" class="edge">
+<title>RandevuOnayi-&gt;RandevuOlustur</title>
+<path fill="none" stroke="black" d="M273.58,-269.65C273.71,-257.96 273.89,-242.19 274.05,-228.62"/>
+<polygon fill="black" stroke="black" points="277.55,-228.96 274.16,-218.92 270.55,-228.88 277.55,-228.96"/>
+<text xml:space="preserve" text-anchor="middle" x="291.85" y="-239.2" font-family="Times,serif" font-size="14.00">EVET</text>
+</g>
+<!-- OnayIptal -->
+<g id="node17" class="node">
+<title>OnayIptal</title>
+<polygon fill="none" stroke="black" points="250.69,-163 90.07,-163 90.07,-127 250.69,-127 250.69,-163"/>
+<text xml:space="preserve" text-anchor="middle" x="170.38" y="-140.8" font-family="Arial" font-size="14.00">YAZ 'İşlem iptal edildi.'</text>
+</g>
+<!-- RandevuOnayi&#45;&gt;OnayIptal -->
+<g id="edge16" class="edge">
+<title>RandevuOnayi-&gt;OnayIptal</title>
+<path fill="none" stroke="black" d="M247.19,-272.29C227.79,-260.11 202.37,-240.89 188.38,-217 180.82,-204.1 176.41,-188.08 173.85,-174.52"/>
+<polygon fill="black" stroke="black" points="177.34,-174.18 172.28,-164.87 170.43,-175.3 177.34,-174.18"/>
+<text xml:space="preserve" text-anchor="middle" x="239.8" y="-239.2" font-family="Times,serif" font-size="14.00">HAYIR</text>
+</g>
+<!-- SmsGonder -->
+<g id="node16" class="node">
+<title>SmsGonder</title>
+<polygon fill="none" stroke="black" points="317.66,-109 209.1,-109 209.1,-73 317.66,-73 317.66,-109"/>
+<text xml:space="preserve" text-anchor="middle" x="263.38" y="-86.8" font-family="Arial" font-size="14.00">SMS GÖNDER</text>
+</g>
+<!-- RandevuOlustur&#45;&gt;SmsGonder -->
+<g id="edge17" class="edge">
+<title>RandevuOlustur-&gt;SmsGonder</title>
+<path fill="none" stroke="black" d="M272.61,-180.97C270.93,-164.76 268.37,-140.06 266.37,-120.79"/>
+<polygon fill="black" stroke="black" points="269.85,-120.43 265.34,-110.85 262.89,-121.15 269.85,-120.43"/>
+</g>
+<!-- SmsGonder&#45;&gt;Bitir -->
+<g id="edge18" class="edge">
+<title>SmsGonder-&gt;Bitir</title>
+<path fill="none" stroke="black" d="M240.87,-72.81C228.29,-63.21 212.48,-51.14 199.03,-40.87"/>
+<polygon fill="black" stroke="black" points="201.43,-38.31 191.36,-35.02 197.19,-43.87 201.43,-38.31"/>
+</g>
+<!-- OnayIptal&#45;&gt;Bitir -->
+<g id="edge19" class="edge">
+<title>OnayIptal-&gt;Bitir</title>
+<path fill="none" stroke="black" d="M170.38,-126.62C170.38,-106.19 170.38,-71.99 170.38,-47.62"/>
+<polygon fill="black" stroke="black" points="173.88,-47.75 170.38,-37.75 166.88,-47.75 173.88,-47.75"/>
+</g>
+</g>
+</svg>
