@@ -1,9 +1,0 @@
-Kullanıcı: "E-ticaret sitesinde sepet yönetimi ve ödeme sistemini adım adım açıkla. Kullanıcı girişi, ürün ekleme, stok kontrolü, indirim kodu, kargo hesaplama ve ödeme aşamalarını içermeli."
-
-Asistan: Elbette, bir e-ticaret sitesinde sepet yönetimi ve ödeme sisteminin adım adım nasıl çalıştığını açıklayalım. Bu süreç, kullanıcının siteye girmesinden ödemeyi tamamlamasına kadar olan yolculuğu kapsar.
-Kullanıcı: "Bu sistemi pseudocode olarak yaz. Döngüler için DÖNGÜ, koşullar için EĞER-İSE kullan. Her adımı BAŞLA ile başlat, BİTİR ile bitir. Tüm kontrol noktalarını belirt."
-
-Asistan: Elbette, bir e-ticaret sitesinin sepet yönetimi ve ödeme sistemini pseudocode olarak aşağıda adım adım açıklıyorum.
-Kullanıcı: "pseudocode u graphviz DOT formatına çevir. rankdir=TB kullan. Karar noktalarında EVET/HAYIR etiketlerini unutma."
-
-Asistan: Elbette, e-ticaret sepet yönetimi ve ödeme sistemi pseudocode'unu Graphviz DOT formatına çevirdim.
