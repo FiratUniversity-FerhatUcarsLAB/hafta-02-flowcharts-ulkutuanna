@@ -1,0 +1,9 @@
+Kullanıcı: ATM para çekme sistemi için detaylı bir pseudocode yazmanı istiyorum. PIN doğrulama (3 hak), bakiye kontrolü, tutar kontrolü (20 TL katları) ve günlük limit kontrolü gibi özellikleri içermeli.
+
+Asistan: Elbette, belirttiğiniz tüm gereksinimleri karşılayan, adım adım bir pseudocode hazırladım. Bu kod, sistemin temel iş mantığını gösteriyor.
+Kullanıcı: Bu pseudocode'u, hataları düzeltilmiş şekilde Graphviz DOT diline çevirir misin?
+
+Asistan: Pseudocode'un mantığını takip ederek bir akış şeması oluşturdum. Ancak, ilk denemede akışta bazı mantıksal eksiklikler olduğunu fark ettim. Bu hataları düzelterek, kullanıcıyı yanlış girişlerde tekrar PIN girmeye yönlendiren ve hatalı para çekme işlemlerinde tutar girişine geri dönen daha sağlam bir akış oluşturdum.
+Kullanıcı: Kodun kopyala-yapıştır yapmama rağmen hata veriyor, bu neden olabilir?
+
+Asistan: Paylaşılan kodun sözdizimsel olarak doğru olmasına rağmen, bu tür hatalar genellikle platform farklılıklarından veya görünmez karakterlerden kaynaklanır.
